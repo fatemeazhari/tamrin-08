@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      .box {
+        border: 1px solid red;
+        padding: 10px 15px;
+        width: 50%;
+        position: relative;
+      }
+      .box1 {
+        background-color: green;
+        color: aliceblue;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+      }
+      .fix {
+        border: 2px solid rgb(24, 4, 4);
+        padding: 10px 15px;
+        text-align: center;
+        color: white;
+        background-color: blue;
+        font-size: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-shadow: 5px 10px yellow;
+      }
+      .close {
+        font-size: 13px;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .img-container {
+        border: 2px solid crimson;
+        width: 50%;
+        position: relative;
+      }
+      .img-container img {
+        width: 100%;
+        display: block;
+      }
+      .img-container .a {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: crimson;
+        border: 1px solid red;
+        border-radius: 5px;
+        color: white;
+      }
+      .img-container .a:hover {
+        background-color: green;
+      }
+      .input-container{
+        border: 1px solid red;
+        position: relative;
+        width: 50%;
+      }
+      .input-container input{
+        width: 100%;
+      }
+      .input-container .eyes{
+        position: absolute;
+        top: 1px;
+        right: 4px;
+        cursor: pointer;
+      }
+      .input-search{
+        border: 1px solid gray;
+        position: relative;
+        width: 50%;
+      }
+      .input-search input{
+        width: 100%;
+      }
+      .input-search .research{
+        position: absolute;
+        top: 1px;
+        right: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fix">happy new year</div>
+    <br /><br /><br /><br />
+    <div>
+      <i class="bi bi-airplane-fill"></i>
+      <br /><br /><br />
+    </div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box box1">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">Lorem ipsum dolor sit amet.</div>
+    <div class="box">
+      Lorem ipsum dolor sit amet.
+      <span class="close"><i class="bi bi-backspace-fill"></i></span>
+    </div>
+    <hr />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="img-container">
+      <img src="/img/speaker.webp" alt="speaker" />
+      <span class="a">10%</span>
+      <div class="overlay"></div>
+    </div>
+    <hr />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    
+    <div class="input-container">
+      <input type="text" />
+     <i class="eyes bi bi-eye"></i>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="input-search">
+        <input type="text">
+        <i class=" research bi bi-search"></i>
+    </div>
+    <br><br><br>
+    <hr>
+    
+  </body>
+</html>
