@@ -74,34 +74,93 @@
       .img-container .a:hover {
         background-color: green;
       }
-      .input-container{
+      .input-container {
         border: 1px solid red;
         position: relative;
         width: 50%;
       }
-      .input-container input{
+      .input-container input {
         width: 100%;
       }
-      .input-container .eyes{
+      .input-container .eyes {
         position: absolute;
         top: 1px;
         right: 4px;
         cursor: pointer;
       }
-      .input-search{
+      .input-search {
         border: 1px solid gray;
         position: relative;
         width: 50%;
       }
-      .input-search input{
+      .input-search input {
         width: 100%;
       }
-      .input-search .research{
+      .input-search .research {
         position: absolute;
         top: 1px;
         right: 4px;
         cursor: pointer;
       }
+      /* start alert */
+      .alert-box {
+        position: relative;
+      }
+      .alert1 {
+        border-left: 4px solid rgb(0, 4, 255);
+        background-color: rgba(0, 255, 255, 0.507);
+        padding: 10px 15px;
+        font-size: 20px;
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+      }
+      .alert2 {
+        border-left: 4px solid crimson;
+        background-color: rgba(255, 0, 0, 0.575);
+        padding: 10px 15px;
+        width: 50%;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+      .alert3 {
+        border-left: 4px solid yellow;
+        background-color: rgba(247, 243, 10, 0.534);
+        width: 50%;
+        padding: 10px 15px;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+      }
+      .alert4 {
+        border-left: 4px solid green;
+        background-color: rgba(40, 228, 80, 0.986);
+        padding: 10px 15px;
+        margin: 10px;
+        width: 50%;
+        text-align: center;
+        font-size: 20px;
+      }
+      /* end alert */
+      /* start span */
+      span.seg {
+        position: absolute;
+        left: 100px;
+      }
+      span.error {
+        position: absolute;
+        left: 100px;
+      }
+      span.warn {
+        position: absolute;
+        left: 100px;
+      }
+      span.seccess{
+        position: absolute;
+        left: 100px;
+      }
+      /* end span */
     </style>
   </head>
   <body>
@@ -130,18 +189,36 @@
     <hr />
     <hr />
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    
+
     <div class="input-container">
       <input type="text" />
-     <i class="eyes bi bi-eye"></i>
+      <i class="eyes bi bi-eye"></i>
     </div>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <div class="input-search">
-        <input type="text">
-        <i class=" research bi bi-search"></i>
+      <input type="text" />
+      <i class="research bi bi-search"></i>
     </div>
-    <br><br><br>
-    <hr>
-    
+    <br /><br /><br />
+    <hr />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="alert-box">
+      <div class="alert1">
+        suggestion: Lorem ipsum dolor sit.
+        <span class="seg material-symbols-outlined"> heart_check </span>
+      </div>
+      <div class="alert2">
+        Error: Lorem ipsum dolor sit.
+        <span class="error material-symbols-outlined"> error </span>
+      </div>
+      <div class="alert3">
+        Warning: Lorem ipsum dolor sit.
+        <span class="warn material-symbols-outlined"> warning </span>
+      </div>
+      <div class="alert4">
+        Seccesful: Lorem ipsum dolor sit.
+        <span class="seccess material-symbols-outlined"> check_circle </span>
+      </div>
+    </div>
   </body>
 </html>
